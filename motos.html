@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicicletas Eléctricas</title>
+    <link rel="stylesheet" href="estilo.css/moto1.css">
+</head>
+<body>
+   <div class="dropdown">
+  <button class="dropbtn">☰ Categorías</button>
+  <div class="dropdown-content">
+    <a href="presentacion.html">Menú Principal</a>
+    <a href="motos.html">Motos</a>
+    <a href="bicicletas.html">Bicicletas</a>
+  </div>
+</div>
+
+    <div class="carrusel">
+        <button class="carrusel-boton izq" onclick="moverCarrusel(-1)">&#10094;</button>
+        <div class="carrusel-imagenes" id="carruselImagenes">
+            <img src="img motos/banner1.png" alt="Bicicleta 1">
+            <img src="img motos/banner2.png" alt="Bicicleta 2">
+            <img src="img motos/banner3.png" alt="Bicicleta 3">
+            <img src="img motos/banner6.png" alt="Bicicleta 5">
+            <img src="img motos/banner7.png" alt="Bicicleta 6">
+            <img src="img motos/banner8.png" alt="Bicicleta 7">
+            <img src="img motos/banner9.png" alt="Bicicleta 8">
+        </div>
+        <button class="carrusel-boton der" onclick="moverCarrusel(1)">&#10095;</button>
+    </div>
+
+    <h3 class="producto">!PRODUCTOS SOLO PARA TI¡</h3>
+    <p class="p  de producto">Compra con confianza. Contáctanos por WhatsApp: +51 977 445 253</p>
+    <!-- Carrusel de productos con botones -->
+<div class="productos-y-video">
+    <div class="carrusel-productos">
+        <button class="carrusel-boton izq" onclick="moverCarruselProductos(-1)">&#10094;</button>
+        <div class="productos" id="carruselProductos">
+            <img src="img motos/produc1.jpg" alt="moto1" onclick="mostrarDetalle('img/img motos/produc1.jpg', 'VoltX One', 'Moto eléctrica urbana, ágil y eficiente. Perfecta para moverte por la ciudad con estilo y cero emisiones.')">
+            <img src="img motos/produc2.jpg" alt="moto2" onclick="mostrarDetalle('img/img motos/produc2.jpg', 'V2L', 'Diseño moderno y batería de larga duración. Ideal para trayectos diarios y aventuras urbanas.')">
+            <img src="img motos/produc3.jpg" alt="moto3" onclick="mostrarDetalle('img/img motos/produc3.jpg', 'EcoRide', 'Comodidad y autonomía para tus recorridos. Disfruta de una conducción suave y silenciosa.')">
+            <img src="img motos/produc4.jpg" alt="moto4" onclick="mostrarDetalle('img/img motos/produc4.jpg', 'UrbanX', 'Movilidad urbana, máxima eficiencia. Descubre la nueva UrbanX.')">
+            <img src="img motos/produc5.jpg" alt="moto5" onclick="mostrarDetalle('img/img motos/produc5.jpg', 'EcoSpeed', 'Velocidad y ecología en una sola moto. Vive la experiencia EcoSpeed.')">
+            <img src="img motos/produc6.jpg" alt="moto6" onclick="mostrarDetalle('img/img motos/produc6.jpg', 'PowerMax', 'Potencia máxima para tus recorridos diarios. Elige PowerMax.')">
+            <img src="img motos/produc7.jpg" alt="moto7" onclick="mostrarDetalle('img/img motos/produc7.jpg', 'CityRunner', 'La moto ideal para la ciudad. Ágil, cómoda y eléctrica.')">
+            <img src="img motos/produc9.jpg" alt="moto8" onclick="mostrarDetalle('img/img motos/produc9.jpg', 'VoltX', 'Innovación y diseño en dos ruedas. Descubre VoltX.')">
+            <img src="img motos/produc10.jpg" alt="moto9" onclick="mostrarDetalle('img/img motos/produc10.jpg', 'Thunder', 'Siente el trueno eléctrico en cada viaje. Thunder es para ti.')">
+        </div>
+        <button class="carrusel-boton der" onclick="moverCarruselProductos(1)">&#10095;</button>
+    </div>
+    <div class="video-youtube">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kU5o6kO6quY" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+    <!-- Panel de detalle de producto -->
+    <div id="detalle-producto" class="detalle-producto" style="display:none;">
+        <button onclick="cerrarDetalle()" class="cerrar-detalle">X</button>
+        <img id="detalle-img" src="" alt="Detalle producto">
+        <h3 id="detalle-titulo"></h3>
+        <p id="detalle-descripcion"></p>
+    </div>
+
+    <!-- Otro bloque de imágenes con título -->
+    <div class="imagenes-lado-a-lado">
+        <h2>!🚴⚡ Muy pronto llegan la moto S7L y nuestro más reciente lanzamiento: una nueva generación eléctrica con potencia, diseño y tecnología sobre dos ruedas. ¡Prepárate! 🔥🚨¡</h2>
+        <div class="imagenes-fila">
+            <img src="img motos/promo1.png" alt="imagen1">
+            <img src="img motos/promo2.png" alt="imagen2">
+        </div>
+    </div>
+
+    <!-- Enlaza tu JS al final del body -->
+<section class="promo-contenido">
+    <h2>⚡ Ofertas en motos eléctricas 2025</h2>
+    <p>¡Atención! Muy pronto llegan promociones exclusivas a nuestro catálogo online de motos eléctricas. Aprovecha increíbles descuentos en modelos urbanos, deportivos y de carga. Es el momento perfecto para moverte con potencia, estilo y sin gasolina.</p>
+
+    <h3>🛵 Haz tu pedido con confianza</h3>
+    <p>Contamos con atención personalizada por WhatsApp, métodos de pago seguros y garantía en cada moto. Descubre la libertad de moverte sin ruido, sin contaminación y con la energía del futuro.</p>
+
+    <h3>🔐 ¿Cómo comprar en nuestra web?</h3>
+    <p>Verifica que el sitio sea seguro (<strong>https</strong>) antes de hacer tu compra. Nuestra plataforma online está protegida para que puedas realizar transacciones con total tranquilidad.</p>
+
+    <h3>🚀 ¿Por qué comprar una moto eléctrica online?</h3>
+    <p>Ahorra tiempo, compara modelos desde casa y recibe tu moto en la puerta. Ofrecemos retiro en tienda o despacho a domicilio, según tu preferencia.</p>
+
+    <h3>🧰 Accesorios y equipamiento</h3>
+    <p>Encuentra cascos, cargadores, guantes, repuestos y todo lo necesario para una experiencia segura y completa en la vía.</p>
+
+    <h3>🛠️ Tecnología y eficiencia para tu día a día</h3>
+    <p>Ya sea para trabajar, movilizarte en la ciudad o reducir gastos, nuestras motos eléctricas te ofrecen rendimiento, autonomía y estilo. Súmate al cambio con cero emisiones y cero preocupaciones.</p>
+
+    <h3>🛡️ Comprometidos con tu seguridad</h3>
+    <p>Todas nuestras motos cuentan con garantía, manual de usuario, y soporte técnico. Recomendamos el uso de casco, luces reglamentarias y revisión periódica para mantener tu moto siempre en óptimas condiciones.</p>
+
+    <hr>
+
+    <h3>🌐 Síguenos en nuestras redes sociales:</h3>
+    <p>
+      📸 Instagram: <a href="https://www.instagram.com/volta.motors.peru" target="_blank">@volta.motors.peru</a><br>
+      📘 Facebook: <strong>Neo Motors Perú</strong><br>
+      📲 WhatsApp: <a href="https://wa.me/51977445253" target="_blank">+51 977 445 253</a>
+    </p>
+  </section>
+  <script src="proyecto.js/moto.js"></script>
+</body>
+</html>

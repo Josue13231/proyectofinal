@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicicletas Eléctricas</title>
+    <link rel="stylesheet" href="estilo.css/cibicletas.css">
+</head>
+<body>
+    
+<div class="dropdown">
+  <button class="dropbtn">☰ Categorías</button>
+  <div class="dropdown-content">
+    <a href="presentacion.html">Menú Principal</a>
+    <a href="motos.html">Motos</a>
+    <a href="bicicletas.html">Bicicletas</a>
+  </div>
+</div>
+
+    <div class="carrusel">
+        <button class="carrusel-boton izq" onclick="moverCarrusel(-1)">&#10094;</button>
+        <div class="carrusel-imagenes" id="carruselImagenes">
+            <img src="img bicicletas/Captura de pantalla 2025-06-27 164104.png" alt="Bicicleta 1">
+            <img src="img bicicletas/pro3.jpg" alt="Bicicleta 2">
+            <img src="img bicicletas/Captura de pantalla 2025-06-27 164356.png" alt="Bicicleta 3">
+            <img src="img bicicletas/Captura de pantalla 2025-06-27 164813.png" alt="Bicicleta 4">
+            <img src="img bicicletas/pro 1.jpg" alt="Bicicleta 5">
+            <img src="img bicicletas/pro2.jpg" alt="Bicicleta 6">
+            <img src="img bicicletas/Captura de pantalla 2025-06-27 164534.png" alt="Bicicleta 7">
+        </div>
+        <button class="carrusel-boton der" onclick="moverCarrusel(1)">&#10095;</button>
+    </div>
+
+    <h3>!PRODUCTOS SOLO PARA TI¡</h3>
+    <p>Compra con confianza. Contáctanos por WhatsApp: +51 977 445 253</p>
+    <div class="productos-y-video">
+        <div class="carrusel-productos">
+            <div class="productos">
+                <img src="img bicicletas/bici1.jpg" alt="bicicletas1" onclick="mostrarDetalle('img/img bicicletas/bici1.jpg', 'DuoRide 2024 – Doble potencia, doble estilo', 'Dos estilos. Una sola energía. Elige tu camino eléctrico.')">
+                <img src="img bicicletas/bici2.jpg" alt="bicicletas2" onclick="mostrarDetalle('img/img bicicletas/bici2.jpg', 'DualForce', 'Dos modelos. Mismo poder eléctrico. Elige tu estilo.')">
+                <img src="img bicicletas/bici3.jpg" alt="bicicletas3" onclick="mostrarDetalle('img/img bicicletas/bici3.jpg', 'TwinRide', 'Doble energía, doble diversión', 'Dos bicicletas, una sola pasión. Elige tu aventura eléctrica.')">
+            </div>
+        </div>
+        <div class="video-youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7NmQtidpmm0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <!-- Panel de detalle de producto -->
+    <div id="detalle-producto" class="detalle-producto" style="display:none;">
+        <button onclick="cerrarDetalle()" class="cerrar-detalle">X</button>
+        <img id="detalle-img" src="" alt="Detalle producto">
+        <h3 id="detalle-titulo"></h3>
+        <p id="detalle-descripcion"></p>
+    </div>
+
+    <!-- Otro bloque de imágenes con título -->
+    <div class="imagenes-lado-a-lado">
+        <h2>¡🚴⚡ Muy pronto llegan las VANMOOF S5 y TURBO VADO 5.0—potencia, diseño y tecnología en dos ruedas. ¡Prepárate!🔥🚨¡</h2>
+        <div class="imagenes-fila">
+            <img src="img bicicletas/promo1.jpg" alt="imagen1">
+            <img src="img bicicletas/promo2.jpg" alt="imagen2">
+        </div>
+    </div>
+
+    <!-- Enlaza tu JS al final del body -->
+<section class="promo-contenido">
+    <h2>⚡ Ofertas en bicicletas eléctricas 2025</h2>
+    <p>¡Atención! Muy pronto llegan promociones increíbles a nuestro catálogo online de bicicletas eléctricas. Aprovecha descuentos exclusivos en modelos urbanos, de montaña y plegables. Es el momento perfecto para moverte de forma sostenible, moderna y sin gastar en combustible.</p>
+    
+    <h3>🚴‍♂️ Haz tu pedido con total confianza</h3>
+    <p>Contamos con atención personalizada por WhatsApp y plataformas seguras para tu compra. Descubre la nueva forma de moverte con energía limpia y estilo.</p>
+    
+    <h3>🛒 ¿Cómo comprar en nuestra web?</h3>
+    <p>Recuerda verificar siempre que estás en un sitio seguro (<strong>https</strong>) antes de hacer tu pedido. Nuestra tienda virtual cuenta con protocolos protegidos para que realices tu compra con tranquilidad.</p>
+    
+    <h3>💡 ¿Por qué comprar bicicletas eléctricas online?</h3>
+    <p>Ahorra tiempo, compara modelos fácilmente y recibe tu bici donde quieras. Te ofrecemos despacho rápido o retiro en tienda, según tu ubicación.</p>
+    
+    <h3>🎒⚙️ Accesorios y equipamiento</h3>
+    <p>También encontrarás cascos, cargadores, guantes, mochilas, luces, y todo lo necesario para completar tu experiencia sobre dos ruedas.</p>
+    
+    <h3>📚🏠 Ideal para moverte, estudiar o trabajar</h3>
+    <p>Si necesitas una solución ecológica para ir a clases, trabajar o simplemente disfrutar el camino, nuestras bicicletas eléctricas son tu mejor opción.</p>
+    
+    <h3>🛡️ Comprometidos con tu seguridad</h3>
+    <p>Ofrecemos productos certificados, garantía en cada compra y soporte postventa. Recuerda usar casco, luces y respetar las normas de tránsito al conducir.</p>
+    
+    <hr>
+
+    <h3>🌐 Síguenos en nuestras redes sociales:</h3>
+    <p>
+      📸 Instagram: <a href="https://www.instagram.com/volta.motors.peru" target="_blank">@volta.motors.peru</a><br>
+      📘 Facebook: <strong>NeoMotors Perú</strong><br>
+      📲 WhatsApp: <a href="https://wa.me/51977445253" target="_blank">+51 977 445 253</a>
+    </p>
+  </section>
+ <script src="proyecto.js/bicicletas.js"></script>
+</body>
+</html>
